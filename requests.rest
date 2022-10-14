@@ -1,0 +1,28 @@
+GET http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuZGVlcCIsImlhdCI6MTY2NTcxODAzMSwiZXhwIjoxNjY1NzE4MDkxfQ.B-gCmdiJvCRZGAj1u8LwqJtwiWQV6MBXVrx4iqO9xjo
+###
+
+POST http://localhost:6000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuZGVlcCIsImlhdCI6MTY2NTcxODAzMSwiZXhwIjoxNjY1NzE4MDkxfQ.B-gCmdiJvCRZGAj1u8LwqJtwiWQV6MBXVrx4iqO9xjo"
+}
+
+###
+
+DELETE http://localhost:6000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuZGVlcCIsImlhdCI6MTY2NTcxNzk2OH0.CVrkF-99J4HfBbUZwMHtSeKKV4srcpLP7yIphd8UJXI"
+}
+
+
+###
+POST http://localhost:6000/login
+Content-Type: application/json
+
+{
+    "username": "sandeep"
+}
